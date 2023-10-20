@@ -3,7 +3,13 @@
     --secondary-color: #2196F3;
     --white-grey: #757575;
 }
-
+ul{
+    padding: 0;
+    margin: 0;
+}
+p,h2 {
+    margin: 0;
+}
 li {
     list-style: none;
 }
@@ -28,6 +34,14 @@ button {
     cursor: pointer;
 }
 
+.container {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .logob,
 .logow {
     color: var(--secondary-color);
@@ -35,6 +49,10 @@ button {
     font-size: 26px;
     font-weight: 700;
     letter-spacing: 0.78px;
+    
+}
+.logob{
+    margin-right: 93px;
 }
 
 .logob span {
@@ -45,14 +63,14 @@ button {
     color: #FFF;
 }
 
-.active {
-    color: var(--secondary-color);
+.navig {
+    color: var(--primary-color);
     font-weight: 500;
     letter-spacing: 0.28px;
 }
 
-.navig {
-    color: var(--primary-color);
+.active {
+    color: var(--secondary-color);
     font-weight: 500;
     letter-spacing: 0.28px;
 }
@@ -63,6 +81,7 @@ button {
 
 .navig:hover,
 .navig:focus {
+    transition: 300ms;
     color: var(--secondary-color);
 }
 
@@ -72,8 +91,8 @@ a {
 }
 
 .shapka {
-    /* width: 100%;
-    height: 600px; */
+    max-height: 600px;
+    padding: 200px 0;
     background: #2F303A;
 }
 
@@ -85,9 +104,12 @@ a {
     line-height: 136.364%;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    max-width: 700px;
+    margin: auto;
 }
 
 .buttona {
+    display: block;
     border-radius: 4px;
     border: var(--secondary-color);
     background: var(--secondary-color);
@@ -97,10 +119,15 @@ a {
     font-weight: 700;
     line-height: 187.5%;
     letter-spacing: 0.96px;
+    padding: 10px 24px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .buttona:hover,
 .buttona:focus {
+    transition: 300ms;
     background-color: #188ce8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
@@ -110,38 +137,43 @@ a {
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .texth {
     color: var(--white-grey);
     line-height: 171.429%;
     letter-spacing: 0.42px;
+    max-width: 270px;
 }
 
+.what-section {
+    padding-bottom: 94px;
+}
 
 .whyheader {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    padding-top: 94px;
 }
 
 .teamSection {
     background: #F5F4FA;
-    /* width: 100%;
-    height: 648px; */
+    padding-bottom: 94px;
 }
 
 .teamCard {
-    /* width: 270px;
-    height: 368px; */
-    /* flex-shrink: 0; */
     border-radius: 0px 0px 4px 4px;
     background: #FFF;
-    /* material shadow v1 */
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
+.teamPara{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .teamText {
     color: var(--white-grey);
     text-align: center;
@@ -154,10 +186,13 @@ a {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.48px;
+    margin-bottom: 10px;
 }
 
 .foot {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .add {
@@ -172,11 +207,13 @@ a {
 }
 
 .info:hover,
-:focus {
+.info:focus {
+    transition: 300ms;
     color: var(--secondary-color);
 }
 
 .filter-button {
+    display: inline-block;
     border-radius: 4px;
     border: #F5F4FA;
     background-color: #F5F4FA;
@@ -186,14 +223,21 @@ a {
     font-weight: 500;
     line-height: 162%;
     letter-spacing: 0.48px;
+    padding: 6px 22px;
 }
 
 .filter-button:hover,
 .filter-button:focus {
+    transition: 300ms;
     background-color: var(--secondary-color);
     border: var(--secondary-color);
     color: #FFF;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+
+.portfolio-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-head {
@@ -201,6 +245,12 @@ a {
     font-weight: 700;
     line-height: 200%;
     letter-spacing: 1.08px;
+    margin-bottom: 4px;
+}
+
+.portfolio-text{
+    padding: 20px 0 20px 24px;
+    /* gap: 4px; */
 }
 
 .portfolio-filt {
@@ -208,8 +258,76 @@ a {
     font-size: 16px;
     line-height: 187.5%;
     letter-spacing: 0.48px;
+    /* margin-left: 24px;
+    margin-bottom: 20px; */
 }
 
 .portfolio-card {
     border: 1px solid #eee;
+    max-width: 370px;
+}
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.navig-list {
+    display: flex;
+}
+
+.mail-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.mail-list>li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.navig-list>li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.list-busines {
+    display: flex;
+    gap: 30px;
+    padding-top: 94px;
+    /* margin-bottom: 94px; */
+}
+
+.what-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.logow {
+    display: inline-block;
+    margin-bottom: 26px;
+}
+
+.add>ul>li:not(:last-child){
+    margin-bottom: 12px;
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
 }

@@ -1,0 +1,38 @@
+.what {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.what__list {
+    display: flex;
+    gap: 30px;
+    max-height: 294px;
+}
+
+.what__image {
+    position: relative;
+}
+
+.what__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    background: rgba(47, 48, 58, 0.80);
+}
+
+.minorheader {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
